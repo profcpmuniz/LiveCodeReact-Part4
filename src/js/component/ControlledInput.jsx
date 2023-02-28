@@ -12,6 +12,7 @@ export default function ControlledInput() {
 
     useEffect(()=>{
         console.log('ControlledInput: Mount First Time')
+        return () => console.log('ControlledInput: Ending the Component...')
     }, [])
 
     useEffect(()=>{
